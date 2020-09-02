@@ -1,0 +1,66 @@
+{% load static i18n flatpages %}
+{% get_flatpages as flatpages %}
+{% get_current_language as LANGUAGE_CODE %}
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <title>{% trans "website_title" %} </title>
+    <meta name="title" content="{% trans "website_title" %}">
+    <meta name="keywords" content="دانشگاه آزاد اسلامي">
+    <meta name="description" content="دانشگاه آزاد اسلامي">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+
+
+    <link rel="stylesheet" href="{% static "css/style.css" %}" type="text/css"/>
+    <link rel="stylesheet" href="{% static "css/slideshow.css" %}" type="text/css"/>
+    <link rel="stylesheet" href="{% static "css/responsive.css" %}" type="text/css"/>
+
+    <script type="text/javascript" src="{% static "js/jquery-1.7.1.min.js" %}"></script>
+    <script type="text/javascript" src="{% static "js/jquery.nivo.slider.pack.js" %}"></script>
+</head>
+<body class="body" id="top">
+<header class="mainheader">
+    <div class="header">
+        <div class="logo"></div>
+        <div class="search">
+            <input type="submit" value="Search"/>
+            <input type="text" placeholder="{% trans "search" %}"/>
+        </div>
+        <div class="language"><a href="#">EN</a></div>
+    </div>
+    <nav>
+        <ul>
+            <li><a href="{% url "homepage" %}">{% trans "index_page" %}</a></li>
+            {% for page in flatpages %}
+                <li><a href="/{{ LANGUAGE_CODE }}/pages{{ page.url }}">{% trans page.title %}</a></li>
+            {% endfor %}
+            <li><a href="{% url "contact" %}">{% trans "contact_us" %}</a></li>
+            <form action="{% url 'set_language' %}" method="post">{% csrf_token %}
+                <select name="language" class="lang">
+                    {% get_available_languages as LANGUAGES %}
+                    {% get_language_info_list for LANGUAGES as languages %}
+                    {% for language in languages %}
+                        <option value="{{ language.code }}"{% if language.code == LANGUAGE_CODE %} selected{% endif %}>
+                            {{ language.name_local }} ({{ language.code }})
+                        </option>
+                    {% endfor %}
+                </select>
+                <input type="submit" value="Go">
+            </form>
+        </ul>
+        
+    </nav>
+</header>
+{% block content %}
+{% endblock %}
+<footer class="mainfooter">
+    <div class="footerl"><img src="images/footer-simple.png"><br>{% trans "copyright" %}<a href="#">{% trans "website_title" %}</a></div>
+    <div class="gotop"><a href="#top">{% trans "top" %}</a></div>
+</footer>
+</body>
+</html>

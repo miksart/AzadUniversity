@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+{% load i18n %}
+{% block content %}
+    <div class="contentpage">
+        <article class="topcontentpage">
+            <header>
+                <h2>{{ flatpage.title }}</h2>
+            </header>
+            <content>
+                <p>
+                    {{ flatpage.content }}
+                </p>
+            </content>
+        </article>
+    </div>
+    {% include "rightnav.html" %}
+{% endblock %}

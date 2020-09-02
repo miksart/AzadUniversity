@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+{% block content %}
+    <div class="contentpage">
+        <article class="topcontentpage">
+            <header>
+                <h2><a href="{% url "article_detail_view" pk=object.id %}">{{ object.title }}</a></h2>
+                <p class="post-info">{{ object.publish }}</p>
+            </header>
+            <content>
+                <img src="{{ object.photo.url }}" style="width: 512px;height: 256px" />
+                <p>
+                    {{ object.text }}
+                </p>
+            </content>
+        </article>
+    </div>
+    {% include "rightnav.html" %}
+{% endblock %}

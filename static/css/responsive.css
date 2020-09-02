@@ -1,0 +1,297 @@
+@media only screen and (min-width: 150px) and (max-width: 400px){
+	.logo{
+		margin: 10px 10px 0 10px;
+	}
+	.body{
+		width: 95%;
+		font-size: 75%;
+	}
+	.mainheader img{
+		width: 99.9%;
+		margin: 0;
+	}
+	.mainheader nav{
+		background: #0c426f;
+		color: #FFF;
+		height: 256px;
+	}
+	.mainheader nav ul{
+		padding: 0 0px;
+	}
+	.mainheader nav ul li{
+		width: 100%;
+		text-align: center;
+	}
+	.mainheader a{
+		height: 20px;
+		padding: 6px 10px;
+		display: block;
+	}
+	.search {
+		position: absolute;
+		width: 90%;
+		margin-left: 4%;
+	}
+	.search input[type='text'] {
+		width: 77%;
+	}
+	.search input[type='submit'] {
+		width: 15%;
+	}
+	.content{
+		width: 100%;
+		float: left;
+	}
+	.rightsidebar, .middlesidebar, .leftsidebar, .newssidebar{
+		width: 96%;
+		padding: 1% 2%;
+		margin: 2% 0 0 0;
+	}
+	.content{
+		width: 96%;
+		padding: 1% 2%;
+		margin-top: 3%;
+		margin-bottom: 2%;
+	}
+	.contentpage{
+		width: 100%;
+		float: left;
+	}
+	.topsidebarpage{
+		float: right;
+		width: 42%;
+		padding: 1% 3%;
+		margin: 2% 0 2% 2%;
+	}
+	.bottomsidebarpage{
+		float: left;
+		width: 42%;
+		padding: 1% 3%;
+		margin: 2% 0 2% 0;
+	}
+	.mainfooter{
+		margin: 1% 1% 3% 0;
+	}
+	.footerl{
+		margin: 3% 0 0 3%;
+	}
+	.nivo-caption {
+		opacity: 0;
+		-moz-opacity: 0;
+		-webkit-opacity: 0;
+		filter:alpha(opacity=0);
+	}
+	.nivo-controlNav {
+		display: none;
+	}
+}
+
+@media only screen and (min-width: 400px) and (max-width: 600px){
+	.body{
+		width: 95%;
+	}
+	.logo{
+		margin: 10px 10px 0 10px;
+	}
+	.mainheader nav{
+		background: #0c426f;
+		color: #FFF;
+		height: 256px;
+	}
+	.mainheader nav ul{
+		padding: 0 0px;
+	}
+	.mainheader nav ul li{
+		width: 100%;
+		text-align: center;
+	}
+	.mainheader a{
+		height: 20px;
+		padding: 6px 10px;
+		display: block;
+	}
+	.search {
+		position: absolute;
+		width: 88%;
+		margin-left: 5%;
+	}
+	.search input[type='text'] {
+		width: 60%;
+	}
+	.search input[type='submit'] {
+		width: 14%;
+	}
+	.rightsidebar {
+		float: right;
+		width: 41%;
+		padding: 1% 4%;
+		margin: 2% 0 0 1%;
+	}
+	.middlesidebar {
+		float: left;
+		width: 40%;
+		padding: 1% 4%;
+		margin: 2% 0 0 0;
+	}
+	.leftsidebar {
+		float: right;
+		width: 92%;
+		padding: 1% 4%;
+	}
+	.newssidebar {
+		float: right;
+		width: 98%;
+	}
+	.contentpage{
+		width: 100%;
+		float: left;
+	}
+	.topsidebarpage{
+		float: right;
+		width: 35%;
+		padding: 1% 3%;
+		margin: 2% 0 2% 2%;
+	}
+	.bottomsidebarpage{
+		float: left;
+		width: 50%;
+		padding: 1% 3%;
+		margin: 2% 0 2% 0;
+	}
+	.nivo-caption {
+		opacity: 0;
+		-moz-opacity: 0;
+		-webkit-opacity: 0;
+		filter:alpha(opacity=0);
+	}
+	.nivo-controlNav {
+		display: none;
+	}
+}
+
+@media only screen and (min-width: 600px) and (max-width: 700px){
+	.body{
+		width: 95%;
+	}
+	.logo{
+		margin: 10px 10px 0 10px;
+	}
+	.mainheader nav{
+		background: #0c426f;
+		color: #FFF;
+		height: 256px;
+	}
+	.mainheader nav ul{
+		padding: 0 0px;
+	}
+	.mainheader nav ul li{
+		width: 100%;
+		text-align: center;
+	}
+	.mainheader a{
+		height: 20px;
+		padding: 6px 10px;
+		display: block;
+	}
+	.search {
+		position: absolute;
+		width: 88%;
+		margin-left: 3%;
+	}
+	.search input[type='text'] {
+		width: 40%;
+	}
+	.search input[type='submit'] {
+		width: 10%;
+	}
+	.rightsidebar {
+		float: right;
+		width: 45%;
+		padding: 1% 2%;
+		margin: 2% 0 0% 0%;
+	}
+	.middlesidebar {
+		float: left;
+		width: 45%;
+		padding: 1% 2%;
+		margin: 2% 0 0% 0%;
+	}
+	.leftsidebar {
+		float: right;
+		width: 45%;
+		padding: 1% 2%;
+		margin: 2% 0 0% 0%;
+	}
+	.newssidebar {
+		float: left;
+		width: 45%;
+		padding: 1% 2%;
+		margin: 2% 0 0% 0%;
+	}
+	.contentpage{
+		width: 100%;
+		float: left;
+	}
+	.topsidebarpage{
+		float: right;
+		width: 30%;
+		padding: 1% 3%;
+		margin: 2% 0 2% 2%;
+	}
+	.bottomsidebarpage{
+		float: left;
+		width: 55%;
+		padding: 1% 3%;
+		margin: 2% 0 2% 0;
+	}
+	.mainfooter{
+		margin: 1% 1% 1% 0;
+	}
+	.footerl{
+		margin: 3% 0 0 2%;
+	}
+}
+
+@media only screen and (min-width: 700px) and (max-width: 900px){
+	.body{
+		width: 95%;
+	}
+	.logo{
+		margin: 20px 20px 0 0;
+	}
+	.language {
+		display: block;
+	}
+	.mainheader a{
+		padding: 10px 6px;
+	}
+	.rightsidebar {
+		float: right;
+		width: 28%;
+	}
+	.middlesidebar {
+		float: right;
+		width: 28%;
+	}
+	.leftsidebar {
+		float: left;
+		width: 35%;
+		margin: 2% 0 0 0;
+	}
+	.newssidebar {
+		float: right;
+		width: 98%;
+	}
+	.mainheader nav .lanen{
+		display: none;
+	}
+}
+
+@media only screen and (min-width: 900px) and (max-width: 1200px){
+	.body{
+		width: 90%;
+	}
+	.mainheader a{
+		padding: 10px 9px;
+	}
+}

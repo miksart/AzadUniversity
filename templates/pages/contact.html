@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+{% load i18n %}
+{% block content %}
+    <div class="contentpage">
+        <div class="topcontentpage">
+            <h1>{% trans "contact_us" %}</h1>
+            {% if success %}
+                <h4>{% trans "your_message_submited" %}</h4>
+            {% endif %}
+            <form method="post">
+                {% csrf_token %}
+                {{ form.as_p }}
+                <div class="form-actions">
+                    <button type="submit">{% trans "submit" %}</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    {% include "rightnav.html" %}
+{% endblock %}
